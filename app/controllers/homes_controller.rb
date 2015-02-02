@@ -8,4 +8,13 @@ class HomesController < ApplicationController
 
 	def contact
 	end
+
+	def potato
+	end
+
+	def onion
+	end
+
+	def corn
+	end
 end

@@ -15,6 +15,9 @@ HmzFoods::Application.routes.draw do
       collection do
         get 'about'
         get 'contact'
+        get 'potato'
+        get 'onion'
+        get 'corn'
       end
     end
 
