@@ -7,19 +7,16 @@ HmzFoods::Application.routes.draw do
   # Keep in mind you can assign values other than :controller and :action
 
   # Sample of named route:
-  #   match 'products/:id/purchase' => 'catalog#purchase', :as => :purchase
+  # match 'homes/onion' => 'homes#onion', :as => :onion
+  get "onion" => "homes#onion", :as => "onion"
+  get "corn" => "homes#corn", :as => "corn"
+  get "about" => "homes#about", :as => "about"
+  get "contact" => "homes#contact", :as => "contact"
+  get "potato" => "homes#potato", :as => "potato"
   # This route can be invoked with purchase_url(:id => product.id)
 
   # Sample resource route (maps HTTP verbs to controller actions automatically):
-    resources :homes do
-      collection do
-        get 'about'
-        get 'contact'
-        get 'potato'
-        get 'onion'
-        get 'corn'
-      end
-    end
+    resources :homes
 
   # Sample resource route with options:
   #   resources :products do
