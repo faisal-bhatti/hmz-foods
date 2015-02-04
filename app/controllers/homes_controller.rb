@@ -15,6 +15,6 @@ class HomesController < ApplicationController
 	def onion
 	end
 
-	def corn
+	def maize
 	end
 end

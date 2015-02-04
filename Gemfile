@@ -34,7 +34,7 @@ end
 gem 'jquery-rails'
 # gem 'sorcery'
 gem 'activerecord'
-
+gem 'geocoder'
 
 # To use ActiveModel has_secure_password
 gem 'bcrypt'

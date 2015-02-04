@@ -9,10 +9,11 @@ HmzFoods::Application.routes.draw do
   # Sample of named route:
   # match 'homes/onion' => 'homes#onion', :as => :onion
   get "onion" => "homes#onion", :as => "onion"
-  get "corn" => "homes#corn", :as => "corn"
+  get "maize" => "homes#maize", :as => "maize"
   get "about" => "homes#about", :as => "about"
   get "contact" => "homes#contact", :as => "contact"
   get "potato" => "homes#potato", :as => "potato"
+  get "rice" => "homes#rice", :as => "rice"
   # This route can be invoked with purchase_url(:id => product.id)
 
   # Sample resource route (maps HTTP verbs to controller actions automatically):

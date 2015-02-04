@@ -42,6 +42,7 @@ GEM
     erubis (2.7.0)
     excon (0.43.0)
     execjs (2.2.2)
+    geocoder (1.2.7)
     heroku (3.23.3)
       heroku-api (~> 0.3.19)
       launchy (>= 0.3.2)
@@ -330,6 +331,7 @@ DEPENDENCIES
   bcrypt
   coffee-rails (~> 3.2.1)
   execjs
+  geocoder
   heroku
   jquery-rails
   libv8 (= 3.11.8.13)
