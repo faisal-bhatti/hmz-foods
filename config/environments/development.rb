@@ -34,4 +34,15 @@ HmzFoods::Application.configure do
 
   # Expands the lines which load the assets
   config.assets.debug = true
+  config.action_mailer.delivery_method = :smtp
+
+  ActionMailer::Base.smtp_settings = {
+  :address              => "smtp.gmail.com",
+  :port                 => 587,
+  :domain               => "www.gmail.com",
+  :user_name            => "hmz.industry@gmail.com",
+  :password             => "hafizzahid67",
+  :authentication       => "plain",
+  :enable_starttls_auto => true
+}
 end

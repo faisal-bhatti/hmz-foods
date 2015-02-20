@@ -17,4 +17,12 @@ class HomesController < ApplicationController
 
 	def maize
 	end
+
+	def message
+		name = params["name"]
+		email = params["email"]
+		message = params["message"]
+		UserMailer.registration_confirmation(name,email,message).deliver
+		redirect_to contact_path
+	end
 end

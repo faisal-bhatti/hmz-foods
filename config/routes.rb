@@ -14,10 +14,15 @@ HmzFoods::Application.routes.draw do
   get "contact" => "homes#contact", :as => "contact"
   get "potato" => "homes#potato", :as => "potato"
   get "rice" => "homes#rice", :as => "rice"
+  # post "message" => "home#message", :as=>"message"
   # This route can be invoked with purchase_url(:id => product.id)
 
   # Sample resource route (maps HTTP verbs to controller actions automatically):
-    resources :homes
+    resources :homes do
+      collection do
+        post 'message'        
+      end
+    end
 
   # Sample resource route with options:
   #   resources :products do
