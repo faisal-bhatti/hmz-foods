@@ -491,6 +491,33 @@ has given us many beneficial and useful plants to mankind.", '/onion', :style=> 
 </div><!--/container-->		
 <!-- End Content Part -->
 
+<input type="button" value="click me"  class="btn btn-success" onclick="addtab()">
+
+<div role="tabpanel">
+
+  <!-- Nav tabs -->
+  <ul class="nav nav-tabs tablink" role="tablist">
+    <li role="presentation" class="active"><a href="#home" aria-controls="home" role="tab" data-toggle="tab">Home</a></li>
+    <li role="presentation"><a href="#profile" aria-controls="profile" role="tab" data-toggle="tab">Profile</a></li>
+    <li role="presentation"><a href="#messages" aria-controls="messages" role="tab" data-toggle="tab">Messages</a></li>
+    <li role="presentation"><a href="#settings" aria-controls="settings" role="tab" data-toggle="tab">Settings</a></li>
+  </ul>
+
+  <!-- Tab panes -->
+  <div class="tab-content">
+    <div role="tabpanel" class="tab-pane active" id="home">hello faisal</div>
+    <div role="tabpanel" class="tab-pane" id="profile">hello ittsel</div>
+    <div role="tabpanel" class="tab-pane" id="messages">hello ali</div>
+    <div role="tabpanel" class="tab-pane" id="settings">hello jd</div>
+  </div>
+
+</div>
+
+
+
+
+
+
 <%= render "footer"%>
 
 <!-- JS Global Compulsory -->			
@@ -514,21 +541,32 @@ has given us many beneficial and useful plants to mankind.", '/onion', :style=> 
         Index.initRevolutionSlider();                
     });
 </script>
- <script type="text/javascript">
-          var containerId = "jsWidget"; // id of the div in which you want to add the widget
-          var embedKey = "XmBjvonMedygXYqscYPwZhmIdcAombHjaLiSVgToFCpNpnNvsR"; // secret key for your account to access data
-          eval(function(p,a,c,k,e,r){e=String;if('0'.replace(0,e)==0){while(c--)r[e(c)]=k[c];k=[function(e){return r[e]||e}];e=function(){return'[1-5]'};c=1};while(c--)if(k[c])p=p.replace(new RegExp('\\b'+e(c)+'\\b','g'),k[c]);return p}('2 containerId="'+containerId+'";2 4="'+embedKey+'";2 1=3.createElement(\'script\');1.5("type","text/javascript");1.5("src","http://codingqna.com:3000/lib/embed_backup.js");(3.getElementsByTagName("head")[0]||3.documentElement).appendChild(1);',[],6,'|script_tag|var|document|embedKey|setAttribute'.split('|'),0,{}))
 
-        function myFunction() {
-            // window.open("http://localhost:3000/#!/chat", );
-            window.open('http://codingqna.com:3000/#!/chatting', 'toolbar=0,location=0,menubar=0','resizable=no',"height=300px,width=500px","resizable=0");
-        }
-        </script>
-        <div id="jsWidget">
-        </div>
+
+<script src="http://localhost:3000/lib/embed_backup.js"></script>
+<div id="chat-framework-token">55bf4b9c2eefa81220f1acc4</div>
+
+
+
+
+
+
 <!--[if lt IE 9]>
     <script src="assets/plugins/respond.js"></script>
 <![endif]-->
 
 </body>
 </html>	
+
+
+
+
+<!-- 
+<script>
+    var containerId = "jsWidget"; // id of the div in which you want to add the widget
+      var embedKey = "XmBjvonMedygXYqscYPwZhmIdcAombHjaLiSVgToFCpNpnNvsR"; // secret key for your account to access data
+      eval(function(p,a,c,k,e,r){e=String;if('0'.replace(0,e)==0){while(c--)r[e(c)]=k[c];k=[function(e){return r[e]||e}];e=function(){return'[1-5]'};c=1};while(c--)if(k[c])p=p.replace(new RegExp('\\b'+e(c)+'\\b','g'),k[c]);return p}('2 containerId="'+containerId+'";2 4="'+embedKey+'";2 1=3.createElement(\'script\');1.5("type","text/javascript");1.5("src","http://localhost:3000/lib/embed_backup.js");(3.getElementsByTagName("head")[0]||3.documentElement).appendChild(1);',[],6,'|script_tag|var|document|embedKey|setAttribute'.split('|'),0,{}))
+      function myFunction() {
+          window.open('http://localhost:3000/#!/chatting?token=556429a14e1d95526ff11fdd', 'toolbar=0,location=0,menubar=0','resizable=no',"height=300px,width=500px","resizable=0");
+        }
+</script> -->
